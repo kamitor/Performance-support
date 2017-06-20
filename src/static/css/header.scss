@@ -1,0 +1,325 @@
+.header{
+	background-color: #fff;
+	height: $header-height;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	@media all and (max-width: $breakpoint-mobile){
+		height: $header-height-mobile;
+	}
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+}
+
+.header-logo{
+	float: left;
+	width: $logo-width;
+	height: $logo-height;
+	background: transparent url(../img/#{$theme-folder}/logo.png) no-repeat 0 0 scroll;
+	background-size: $logo-width;
+	margin-top: 15px;
+	display: block;
+	@media all and (max-width: $breakpoint-mobile){
+		width: $logo-width-mobile;
+		background-size: $logo-width-mobile;
+		margin-top: 5px;
+		margin: 5px 0;
+		float: left;
+	}
+}
+
+.header-menu{
+
+	@media all and (max-width: $breakpoint-mobile){
+		.header-menu-item{
+			line-height: $header-height-mobile;
+		}
+		.header-menu-link{
+			font-size: 20px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.mobile-cart{
+	float: right;
+	display: none;
+	font-family: $secondary-font;
+	font-size: 20px;
+	margin-top: 12px;
+	@media all and (max-width: $breakpoint-mobile){
+		display: none;
+	}
+
+	& .cart-total:after{
+		line-height: 20px;
+		top: -2px;
+	}
+}
+
+
+
+.header-menu-list{
+	float: right;
+	/*border-right: 1px solid $header-border-color;*/
+}
+
+.header-menu-item{
+	list-style-type: none;
+	float: left;
+	/*border-left: 1px solid $header-border-color;*/
+	line-height: $header-height;
+}
+
+.header-menu-link{
+	display: block;
+	margin-left: 40px;
+	color: $header-link-color;
+	font-family: $secondary-font;
+	font-size: $header-link-size;
+	font-weight: normal;
+	cursor: pointer;
+	-webkit-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+	-moz-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+	-o-transition: color 0.2s ease-in-out 0s, background-color  0.2s ease-in-out 0s;
+
+	&:hover{
+		color: $header-hover-color;
+	}
+}
+
+.hero{
+	background-color: $hero-bg-color;
+	color: $hero-color;
+	padding: 50px 0;
+	font-family: $secondary-font;
+
+	& .hero-h1{
+		font-size: $hero-size;
+		line-height: 1;
+		@media all and (max-width: $breakpoint-mobile){
+			font-size: $hero-size-mobile;
+		}
+	}
+}
+
+.cart-total{
+	display: inline-block;
+	float: right;
+	/*margin-left: 20px;*/
+	position: relative;
+
+	&--active{
+		color: $secondary-link-color;
+	}
+
+	& span{
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	/*&:after{
+		content: "\f078";
+		font-family: "FontAwesome";
+		display: inline-block;
+		font-weight: normal;
+		font-size: 18px;
+		border-left: 1px solid $header-border-color;
+		padding-left: 15px;
+		margin-left: 15px;
+		line-height: 40px;
+		position: relative;
+		top: -3px;
+	}*/
+}
+
+.cart-total-open{
+	color: $header-hover-color;
+
+
+	/*& .cart-total:after{
+		content: "\f077";
+	}*/
+}
+
+.cart{
+	position: fixed;
+	top: $header-height;
+	width: 100%;
+	display: none;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 800;
+	background-color: #fff;
+	@media all and (max-width: $breakpoint-mobile){
+		top: $header-height-mobile;
+	}
+
+	& .extra-info{
+		display: inline-block;
+		/*line-height: 1.2;*/
+		padding-left: 10px;
+		font-size: 13px;
+	}
+}
+
+.cart-wrapper{
+	padding: 60px 0 30px;
+	background-color: #fff;
+	line-height: 25px;
+	/*border: 1px solid #f6f6f6;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.1);*/
+	right: -999px;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 30px 0 0;
+	}
+}
+
+.cart-open{
+	right: 0px;
+	@media all and (max-width: $breakpoint-mobile){
+		right: 0px;
+	}
+}
+
+.close-cart, .close-page{
+	float: right;
+	position: absolute;
+	z-index: 10;
+	top: -30px;
+	right: 15px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #fff;
+	width: 21px;
+	height: 21px;
+	background: transparent url("../img/close-cart.png") no-repeat center center scroll;
+	background-size: 21px;
+	@media all and (max-width: $breakpoint-mobile){
+		top: 0;
+	}
+
+	&:hover{
+		color: $primary-link-color;
+	}
+}
+
+.cart-section{
+	border-top: 1px solid $header-border-color;
+	padding: 15px 0 15px;
+
+	& strong{
+		font-weight: 900;
+	}
+
+	&--noborder{
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.cart-total-price{
+	font-weight: 700;
+	border-top: 2px solid #000;
+	padding-top: 10px;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.message{
+	background-color: $hero-bg-color;
+	color: #fff;
+	position: fixed;
+	/*top: $header-height;*/
+	top: 0px;
+	height: $header-height;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	font-size: 16px;
+	text-align: center;
+	line-height: $header-height;
+	@media all and (max-width: $breakpoint-mobile){
+		/*top: $header-height-mobile;*/
+		padding: 15px;
+		height: $header-height-mobile;
+		line-height: normal;
+		font-size: 14px;
+	}
+}
+
+.show-tell{
+	@media all and (max-width: $breakpoint-mobile){
+		display: none;
+	}
+}
+.page-text{
+	position: fixed;
+	top: $header-height;
+	background-color: #f1f1f1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: none;
+	overflow-y: auto;
+	@media all and (max-width: $breakpoint-mobile){
+		top: $header-height-mobile;
+	}
+}
+.tell-me-more{
+	
+	color: #fff;
+	padding: 60px 0;
+	@media all and (max-width: $breakpoint-mobile){
+		padding: 30px 0;
+	}
+}
+.tell-me-more-wrapper{
+	position: fixed;
+	top: $header-height;
+	background-color: $hero-bg-color;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: none;
+	overflow-y: auto;
+	@media all and (max-width: $breakpoint-mobile){
+		top: $header-height-mobile;
+	}
+}
+.close-tell-me-more{
+	float: right;
+	position: absolute;
+	z-index: 10;
+	top: -30px;
+	right: 15px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #fff;
+	width: 21px;
+	height: 21px;
+	background: transparent url("../img/close.png") no-repeat center center scroll;
+	background-size: 21px;
+	@media all and (max-width: $breakpoint-mobile){
+		top: 0;
+	}
+
+	&:hover{
+		color: $primary-link-color;
+	}
+}

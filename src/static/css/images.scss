@@ -1,0 +1,28 @@
+.img-illu{
+    @media all and (max-width: $breakpoint-mobile){
+        margin-bottom: 50px;
+    }
+}
+
+.img-container{
+    position: relative;
+    background: #f0f0f0;
+    height: 0;
+    overflow: hidden;
+
+    & img{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+.img-ratio-1-1{
+    padding-bottom: 100%;
+}
+.img-ratio-2-1{
+    padding-bottom: 50%;
+}
+.img-ratio-3-2{
+    padding-bottom: 66.66%;
+}

@@ -1,0 +1,21 @@
+footer{
+	background-color: $heading-color;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0 120px;
+	font-family: $primary-font;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	@media all and (max-width: $breakpoint-mobile){
+		letter-spacing: 1px;
+		padding: 40px 0 50px;
+		font-size: 7px;
+
+		& span{
+			display: block;
+		}
+	}
+}
