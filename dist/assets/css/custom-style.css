@@ -33,6 +33,10 @@
  *--------------------------------------------------
  */
 
+.secondary-color{
+  color: #e67e22;
+}
+
 #header {
   /* 1. Header wrapper */
 }
