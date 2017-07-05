@@ -1,0 +1,62 @@
+---
+title: Tekst pagina
+preloader: false
+layout: default.hbs
+bodyclass: test
+loader: true
+---
+
+{{> header }}
+{{!-- <div class="p-4 py-lg-8 bg-grey-dark text-center overlay overlay-white overlay-op-7 bg-img" data-bg-img="assets/img/backgrounds/about.jpg" data-css="{&quot;background-position&quot;: &quot;center center&quot;,&quot;background-attachment&quot;: &quot;scroll&quot;}"></div> --}}
+<div id="content" class="p-0">
+	<div class="container" id="about">
+		<div class="row">
+			<!--main content-->
+			<div class="col-md-10 offset-md-1 mb-6">
+				<!-- About company -->
+				<h1 class="h3 title-divider mt-3">
+					<span>Demo</span>
+				</h1>
+				<p>Nullam accumsan fermentum enim ac interdum. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<div align="center" class="embed-responsive embed-responsive-16by9 mt-2">
+					<video id="video" controls="" preload="none" poster="https://media.w3.org/2010/05/sintel/poster.png">
+						<source id="mp4" src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"></source>
+						<source id="webm" src="https://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm"></source>
+						<source id="ogv" src="https://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"></source>
+						<p>Your user agent does not support the HTML5 Video element.</p>
+					</video>
+				</div>
+				<p class="mt-4">Nullam accumsan fermentum enim ac interdum. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Vestibulum vel efficitur massa, sit amet molestie eros. Proin tristique varius massa et hendrerit. Suspendisse potenti. Nulla sit amet quam felis. Integer fermentum at nulla ut rhoncus. Aliquam pellentesque ipsum ut nulla auctor, vitae dictum nisi scelerisque. Nulla finibus eros lobortis cursus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar elit elementum ex euismod, sit amet aliquet sapien iaculis. Sed condimentum tellus ac magna rutrum pharetra. In hac habitasse platea dictumst. Integer tellus turpis, porta sed nunc ut, sodales iaculis purus. In efficitur ante at diam viverra posuere.</p>
+				<div class="title-divider mt-4" id="stats">
+					<h3>
+						<span>Vital <span class="font-weight-normal text-muted">Stats</span></span>
+						{{!-- <small>Stats to impress!</small> --}}
+					</h3>
+				</div>
+				<div class="row stats">
+					<div class="col-md-3 stat">
+						<div class="stat-header">1280</div>
+						<small>Happpy Customers</small>
+					</div>
+					<div class="col-md-3 stat">
+						<div class="stat-header">1634</div>
+						<small>GB Transfered</small>
+					</div>
+					<div class="col-md-3 stat">
+						<div class="stat-header">2143</div>
+						<small>Bugs Fixed</small>
+					</div>
+					<div class="col-md-3 stat">
+						<div class="stat-header">12</div>
+						<small>Share Holders</small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	{{> partial-testimonials }}
+</div>
+{{> footer }}

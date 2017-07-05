@@ -53,10 +53,19 @@
 </head>
 
 <!-- ======== @Region: body ======== -->
-<body class="page page-index-static navbar-layout-default header-transparent header-ontop">
-	
+
+	{{#if bodyclass}}
+	  <body class="page page-about navbar-layout-default">
+	{{else}}
+		<body class="page page-index-static navbar-layout-default header-transparent header-ontop">
+	{{/if}}
 	<!-- @plugin: page loading indicator, delete to remove loader -->
-	<div class="page-loader" data-toggle="page-loader"></div>
+	{{#if loader}}
+		<div class="page-loader" data-toggle="page-loader"></div>
+	{{else}}
+		
+	{{/if}}
+	
 	
 	<a href="#content" id="top" class="sr-only">Skip to content</a> 
 		{{> body }}

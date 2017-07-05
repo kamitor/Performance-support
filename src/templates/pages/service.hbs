@@ -1,0 +1,83 @@
+---
+title: Service / FAQ
+preloader: false
+layout: default.hbs
+bodyclass: test
+loader: true
+---
+
+{{> header }}
+<div class="p-4 py-lg-8 bg-grey-dark text-center overlay overlay-white overlay-op-7 bg-img" data-bg-img="assets/img/backgrounds/about.jpg" data-css="{&quot;background-position&quot;: &quot;center center&quot;,&quot;background-attachment&quot;: &quot;scroll&quot;}">
+</div>
+<div id="content" class="p-0">
+	<div class="container">
+		<div class="row">
+			<!--main content-->
+
+			<div class="col-md-10 offset-md-1 py-6">
+				<!-- About company -->
+				<h1 class="h3 title-divider">
+					<span>F.A.Q</span>
+				</h1>
+				{{!-- <h4 class="mt-4">
+					List Style
+				</h4> --}}
+				<div class="card-accordion card-accordion-list-style card-accordion-icons-left" id="accordion-list-style" role="tablist" aria-multiselectable="true">
+					<!-- Card 1 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingOne2"> <a data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseOneList" aria-expanded="false" aria-controls="collapseOne" class="show collapsed">Vraag #1 </a> </div>
+						<div id="collapseOneList" class="in collapse" role="tabpanel" aria-labelledby="headingOne1" aria-expanded="false" style="">
+							<div class="card-block">Eligo luctus nobis pertineo. Eros exerci lenis paratus premo verto. Commoveo dignissim nimis nutus oppeto proprius utinam valetudo voco.</div>
+						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingTwo2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseTwoList" aria-expanded="false" aria-controls="collapseTwo">Vraag #2 </a> </div>
+						<div id="collapseTwoList" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" aria-expanded="false" style="">
+							<div class="card-block">Abigo antehabeo mos nobis veniam. Immitto te valde. Dolor genitus jus lobortis plaga ullamcorper vereor.</div>
+						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingThree2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseThreeList" aria-expanded="false" aria-controls="collapseThree">Vraag #3 </a> </div>
+						<div id="collapseThreeList" class="collapse" role="tabpanel" aria-labelledby="headingThree3" aria-expanded="false" style="">
+							<div class="card-block">Abbas accumsan quidem saepius tation utrum validus veniam. Camur haero melior sino valetudo. Blandit ea hendrerit ut.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-primary mt-6">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-5 divider-diagonal divider-diagonal-r divider-primary op-9 bg-img" data-bg-img="assets/img/shop/promo-bikini.jpg" data-css="{&quot;background-position&quot;:&quot;right bottom&quot;}"></div>
+							<div class="col-lg-7 py-6 flex-valign">
+								<hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-white">
+								<h2 class="display-4 text-slab text-grey text-uppercase my-0">
+									App<span class="text-white font-weight-bold">Store</span>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-faded">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-7 py-6 flex-valign">
+								<hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary">
+								<h2 class="display-4 text-slab text-grey-dark text-uppercase my-0">
+									Laatste <span class="text-primary font-weight-bold">nieuws</span>
+								</h2>
+							</div>
+							<div class="col-lg-5 divider-diagonal divider-diagonal-l divider-faded op-9 bg-img" data-bg-img="assets/img/shop/promo-kids.jpg" data-css="{&quot;background-position&quot;:&quot;right bottom&quot;}"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	{{!-- {{> partial-video }} --}}
+</div>
+{{> footer }}
