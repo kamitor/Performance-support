@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PerformanceSupport</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<!-- @todo: fill with your company info or remove -->
+	<meta name="description" content="">
+	<meta name="author" content="Themelize.me">
+	
+	<!-- Bootstrap 4.0.0-alpha.6 CSS via CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	
+	<!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+	
+	<!-- Theme style -->
+	<link href="assets/css/theme-style.min.css" rel="stylesheet">
+	
+	<!--Your custom colour override-->
+	
+	
+	
+	<!-- Your custom override -->
+	<link href="assets/css/custom-style.css" rel="stylesheet">
+	
+	
+	
+	<!-- Optional: ICON SETS -->
+	<!-- Iconset: Font Awesome 4.7.0 via CDN -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+	<link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+	<!-- Iconset: ionicons - http://ionicons.com/ -->
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<!-- Iconset: Linearicons - https://linearicons.com/free -->
+	<link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+	
+	
+	<!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+	<link rel="shortcut icon" href="assets/assets/img/icons/favicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/assets/img/icons/114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/assets/img/icons/72x72.png">
+	<link rel="apple-touch-icon" href="assets/assets/img/icons/default.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	
+	<!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+</head>
+
+<!-- ======== @Region: body ======== -->
+
+	
+	  <body class="page page-about navbar-layout-default">
+	
+	<!-- @plugin: page loading indicator, delete to remove loader -->
+	
+		<div class="page-loader" data-toggle="page-loader"></div>
+	
+	
+	
+	<a href="#content" id="top" class="sr-only">Skip to content</a> 
+		
+
+<div id="header">
+      <div class="header-upper">
+        <!--Show/hide trigger for #hidden-header -->
+        
+        <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+        <div class="header-inner container">
+          <!--user menu-->
+          <div class="header-block-flex flex-first mr-auto">
+            <nav class="nav nav-sm header-block-flex">
+              <a class="nav-link hidden-md-up" href="login.htm"><i class="fa fa-user"></i></a>
+              <a class="nav-link text-xs text-uppercase hidden-sm-down" href="#signup-modal" data-toggle="modal">Inschrijven</a> <a class="nav-link text-xs text-uppercase hidden-sm-down" href="#login-modal" data-toggle="modal">Login</a> 
+            </nav>
+            <div class="header-divider header-divider-sm"></div>
+            <!--language menu-->
+            <div class="dropdown dropdowns-no-carets">
+              <a href="#en" class="nav-link text-xs p-1 dropdown-toggle" data-toggle="dropdown"><i class="flag-icon flag-icon-nl"></i></a>
+              <div class="dropdown-menu dropdown-menu-mini dropdown-menu-primary">
+                <a href="#es" class="dropdown-item lang-de"><i class="flag-icon flag-icon-de"></i> German</a>
+                <a href="#pt" class="dropdown-item lang-gb"><i class="flag-icon flag-icon-gb"></i> English</a>
+              </div>
+            </div>
+          </div>
+          <!--social media icons-->
+          <div class="nav nav-icons header-block flex-last">
+            <!--@todo: replace with company social media details-->
+            <a href="#" class="nav-link"> <i class="fa fa-twitter-square icon-1x"></i> <span class="sr-only">Twitter</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-linkedin-square icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
+            <a href="#" class="nav-link"> <i class="fa fa-google-plus-square icon-1x"></i> <span class="sr-only">Google plus</span> </a>
+          </div>
+        </div>
+      </div>
+      <div style="visibility: hidden; display: none; width: 1510px; height: 108px; margin: 0px; float: none; position: static; top: 0px; right: auto; bottom: auto; left: auto;"></div><div data-toggle="sticky" class="sticky" style="top: 0px;">
+        
+        <!--Header search region - hidden by default -->
+        <div class="header-search collapse" id="search">
+          <form class="search-form container">
+            <input name="search" class="form-control search" value="" placeholder="Zoeken" type="text">
+            <button type="button" class="btn btn-link"><span class="sr-only">Zoeken</span><i class="fa fa-search fa-flip-horizontal search-icon"></i></button>
+            <button type="button" class="btn btn-link close-btn" data-toggle="search-form-close"><span class="sr-only">Close </span><i class="fa fa-times search-icon"></i></button>
+          </form>
+        </div>
+        
+        <!--Header & Branding region-->
+        <div class="header">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="header-inner container">
+            <!--branding/logo -->
+            <div class="header-brand flex-first">
+              <a class="header-brand-text" href="home.html" title="Home">
+                <h1>
+                  <span>Performance</span>Support
+                </h1>
+              </a>
+              
+            </div>
+            <!-- other header content -->
+            <div class="header-block flex-last">
+              
+              <!--Search trigger -->
+              <a href="#search" class="btn btn-icon btn-link header-btn float-right flex-last" data-toggle="search-form" data-target=".header-search"><i class="fa fa-search fa-flip-horizontal search-icon"></i></a>
+              
+              <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu - data-toggle="overlay" = Overlay Menu -->
+              <a href="#top" class="btn btn-link btn-icon header-btn float-right hidden-lg-up" data-toggle="jpanel-menu" data-target=".navbar-main" data-direction="right"> <i class="fa fa-bars"></i> </a>
+            </div>
+            
+            <div class="navbar navbar-toggleable-md">
+              <!--everything within this div is collapsed on mobile-->
+              <div class="navbar-main collapse">
+                <!--main navigation-->
+                <ul class="nav navbar-nav float-lg-right dropdown-effect-fade">
+                  <!-- Homepages -->
+                  <li class="nav-item">
+                    <a href="home.html" class="nav-link" id="indexs-drop"> <i class="fa fa-home nav-link-icon"></i> <span class="hidden-xs-up">Home</span> </a>
+                  </li>
+                  
+                  <!-- Pages -->
+                  <li class="nav-item">
+                    <a href="demo.html" class="nav-link">Demo</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a href="content.html" class="nav-link">Over ons</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a href="service.html" class="nav-link">Service</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a> 
+                  </li>
+
+                  
+                  
+                  <!-- Mega menu example -->
+                  
+                </ul>
+              </div>
+              <!--/.navbar-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="p-4 py-lg-8 bg-grey-dark text-center overlay overlay-white overlay-op-7 bg-img" data-bg-img="assets/img/backgrounds/about.jpg" data-css="{&quot;background-position&quot;: &quot;center center&quot;,&quot;background-attachment&quot;: &quot;scroll&quot;}">
+</div>
+<div id="content">
+	<div class="container">
+		<div class="row">
+			<!--main content-->
+
+			<div class="col-md-10 offset-md-1">
+				<!-- About company -->
+				<h1 class="h3 title-divider mt-3">
+					<span>F.A.Q</span>
+				</h1>
+				
+				<div class="card-accordion card-accordion-list-style card-accordion-icons-left" id="accordion-list-style" role="tablist" aria-multiselectable="true">
+					<!-- Card 1 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingOne2"> <a data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseOneList" aria-expanded="false" aria-controls="collapseOne" class="show collapsed">Vraag #1 </a> </div>
+						<div id="collapseOneList" class="in collapse" role="tabpanel" aria-labelledby="headingOne1" aria-expanded="false" style="">
+							<div class="card-block">Eligo luctus nobis pertineo. Eros exerci lenis paratus premo verto. Commoveo dignissim nimis nutus oppeto proprius utinam valetudo voco.</div>
+						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingTwo2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseTwoList" aria-expanded="false" aria-controls="collapseTwo">Vraag #2 </a> </div>
+						<div id="collapseTwoList" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" aria-expanded="false" style="">
+							<div class="card-block">Abigo antehabeo mos nobis veniam. Immitto te valde. Dolor genitus jus lobortis plaga ullamcorper vereor.</div>
+						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class="card">
+						<div class="card-header py-0 px-0" role="tab" id="headingThree2"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-list-style" href="#collapseThreeList" aria-expanded="false" aria-controls="collapseThree">Vraag #3 </a> </div>
+						<div id="collapseThreeList" class="collapse" role="tabpanel" aria-labelledby="headingThree3" aria-expanded="false" style="">
+							<div class="card-block">Abbas accumsan quidem saepius tation utrum validus veniam. Camur haero melior sino valetudo. Blandit ea hendrerit ut.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-primary mt-6">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-5 divider-diagonal divider-diagonal-r divider-primary op-9 bg-img" data-bg-img="assets/img/shop/promo-bikini.jpg" data-css="{&quot;background-position&quot;:&quot;right bottom&quot;}"></div>
+							<div class="col-lg-7 py-6 flex-valign">
+								<hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-white">
+								<h2 class="display-4 text-slab text-grey text-uppercase my-0">
+									App<span class="text-white font-weight-bold">Store</span>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-faded">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-7 py-6 flex-valign">
+								<hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary">
+								<h2 class="display-4 text-slab text-grey-dark text-uppercase my-0">
+									Laatste <span class="text-primary font-weight-bold">nieuws</span>
+								</h2>
+							</div>
+							<div class="col-lg-5 divider-diagonal divider-diagonal-l divider-faded op-9 bg-img" data-bg-img="assets/img/shop/promo-kids.jpg" data-css="{&quot;background-position&quot;:&quot;right bottom&quot;}"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	
+</div>
+<div id="content-below">
+  <!-- Awesome features call to action -->
+  <div class="bg-primary text-white py-4">
+    <div class="container">
+      <div class="row text-center text-lg-left">
+        <div class="col-12 col-lg-7 py-2">
+          <h2 class="text-uppercase font-weight-bold mt-0 mb-2">
+            <span class="">Some text goes here</span> 
+          </h2>
+          <h5 class="text-faded">
+          	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            
+          </h5>
+        </div>
+        <div class="col-12 col-lg-5 py-2 text-lg-right">
+          <a href="demo.html" class="btn btn-lg btn-primary btn-invert btn-rounded py-3 px-4">Bekijk de demo<i class="fa fa-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="footer" class="p-0 footer-light">
+	<div class="container pt-6 pb-5">
+		<div class="row">
+			<div class="col-md-4">
+				<!--@todo: replace with company contact details-->
+				<h4 class="text-uppercase text-grey-dark">
+					Contact
+				</h4>
+				<address>
+					<ul class="list-unstyled">
+						<li>
+							<abbr title="Phone"><i class="fa fa-phone fa-fw"></i></abbr>
+							123 45678910
+						</li>
+						<li>
+							<abbr title="Email"><i class="fa fa-envelope fa-fw"></i></abbr>
+							info@performancesupport.eu
+						</li>
+						<li>
+							<abbr title="Address"><i class="fa fa-home fa-fw"></i></abbr>
+							Somestreet 1, 1234 AB, Amsterdam
+						</li>
+					</ul>
+				</address>
+			</div>
+
+			<div class="col-md-4">
+				<h4 class="text-uppercase text-grey-dark">
+					Over ons
+				</h4>
+				<p>Praesent eleifend metus hendrerit semper tristique. Donec nulla ipsum, scelerisque eget rhoncus sit amet.</p>
+			</div>
+
+			<div class="col-md-4">
+				<h4 class="text-uppercase text-grey-dark">
+					Nieuwsbrief
+				</h4>
+				<p>Praesent eleifend metus hendrerit semper tristique. Donec nulla ipsum, scelerisque eget rhoncus sit amet.</p>
+				<!--@todo: replace with mailchimp code-->
+				<form>
+					<div class="input-group">
+						<label class="sr-only" for="email-field">Email</label>
+						<input class="form-control" id="email-field" placeholder="Email" type="text">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Go!</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<hr class="my-0 hr-blank op-2">
+	<!--@todo: replace with company copyright details-->
+	<div class="bg-grey text-sm py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<p class="mb-0">Alle rechten voorbehouden PerformanceSupport</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline footer-links float-md-right mb-0">
+						<li class="list-inline-item"><a href="#">Voorwaarden</a></li>
+						<li class="list-inline-item"><a href="#">Privacy</a></li>
+						<li class="list-inline-item"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="#top" class="btn btn-icon btn-inverse pos-fixed pos-b pos-r mr-3 mb-3 hidden-md-down scroll-state-active" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+		</div>
+	</div>
+</footer>
+	</div>
+	
+	
+	<!--jQuery 3.2.1 via CDN -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Tether 1.1.1 via CDN, needed for Bootstrap Tooltips & Popovers -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+	
+	<!-- Bootstrap 4.0.0-alpha.6 JS via CDN -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	
+	
+	<!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+	
+	<!--Custom scripts & AppStrap API integration -->
+	<script type="text/javascript" src="assets/js/custom-script.js"></script>
+	<!--AppStrap scripts mainly used to trigger libraries/plugins -->
+	<script type="text/javascript" src="assets/js/script.min.js"></script>
+</body>
+</html>
