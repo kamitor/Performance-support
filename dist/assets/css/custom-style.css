@@ -33,16 +33,45 @@
  *--------------------------------------------------
  */
 
+ .logo{
+  max-width: 250px;
+ }
+
+.nowrap{
+  white-space: nowrap;
+}
+.img-fluid{
+  width: 100%;
+}
+.bg-blue{
+  background: #1779c6 !important;
+  color: #fff;
+}
 .secondary-color{
   color: #e67e22;
 }
 
-#header {
+p{
+  line-height: 1.6;
+}
+.heading{
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-transform: none !important;
+}
+
+.header {
   /* 1. Header wrapper */
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 #highlighted {
   /* 2. Highlighted (below header) wrapper */
+  height: 90%;
+}
+
+#highlighted h3{
+  line-height: 1.4;
 }
 
 #content {
