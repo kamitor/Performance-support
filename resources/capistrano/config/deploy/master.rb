@@ -1,8 +1,8 @@
 #env settings
-set :application_env, 'master'
-set :deploy_to, '/resources2/fileshare'
+set :application_env, 'prod'
+set :deploy_to, '/resources/fileshare'
 #set :stage_branch,  'prod'
-set :use_sudo, false
+set :use_sudo, true
 
 role :app, '172.16.0.11', :master => true
 
