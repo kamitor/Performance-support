@@ -202,46 +202,9 @@
         </div>
       </div>
 </div>
-<div id="testimonials" class="p-3 py-6 bg-inverse">
-  <div class="container">
-    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
-    <h2 class="text-white text-center heading my-0">
-      Vertrouwd door vele organisaties
-    </h2>
-    
-    <hr class="mb-5 w-50 mx-auto">
-    <div class="row">
-      <div class="col-md-4 d-md-flex">
-        <blockquote class="blockquote-bubble blockquote-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.1">
-          <p class="blockquote-bubble-content bg-white">"It's totally awesome, we're could imagine life without it!"</p>
-          <small class="text-grey">
-            <img src="https://i1.wp.com/tellmemore.media/wp-content/uploads/2017/06/1562876-thumb.jpg?fit=256%2C256&ssl=1" alt="Jimi Bloggs" class="rounded-circle mr-2">
-            Jimi Bloggs
-          </small>
-        </blockquote>
-      </div>
-      <div class="col-md-4 d-md-flex">
-        <blockquote class="blockquote-bubble blockquote-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.2">
-          <p class="blockquote-bubble-content bg-white text-center">"10 out of 10, highly recommended!"</p>
-          <small class="text-grey">
-            <img src="https://i1.wp.com/tellmemore.media/wp-content/uploads/2017/04/1315042-thumb.jpg?fit=256%2C256&ssl=1" alt="Jimi Bloggs" class="rounded-circle mr-2">
-            Steve Bloggs
-          </small>
-        </blockquote>
-      </div>
-      <div class="col-md-4 d-md-flex">
-        <blockquote class="blockquote-bubble blockquote-center animated animated-done" data-animate="fadeIn" data-animate-delay="0.3">
-          <p class="blockquote-bubble-content bg-white text-center">"Our productivity &amp; sales are up! Couldn't be happier with this product!"</p>
-          <small class="text-grey">
-            <img src="https://i1.wp.com/tellmemore.media/wp-content/uploads/2017/06/1597216-thumb.jpg?fit=256%2C256&ssl=1" alt="Adele Bloggs" class="rounded-circle mr-2">
-            Adele Bloggs
-          </small>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="content-below">
+
+
+<div id="content-below" class="mt-8">
   <!-- Awesome features call to action -->
   <div class="bg-primary text-white py-4">
     <div class="container">
@@ -263,11 +226,12 @@
   </div>
 </div>
 <footer id="footer" class="p-0 footer-light">
-	<div class="container pt-6 pb-5">
+    <div class="gradient-line"></div>
+	<div class="container py-8">
 		<div class="row">
 			<div class="col-md-4">
 				<!--@todo: replace with company contact details-->
-				<h4 class="text-uppercase text-grey-dark">
+				<h4 class="text-black mb-3">
 					Contact
 				</h4>
 				<address>
@@ -288,35 +252,35 @@
 				</address>
 			</div>
 
-			<div class="col-md-4">
-				<h4 class="text-uppercase text-grey-dark">
-					Over ons
-				</h4>
-				<p>Praesent eleifend metus hendrerit semper tristique. Donec nulla ipsum, scelerisque eget rhoncus sit amet.</p>
-			</div>
+			
 
 			<div class="col-md-4">
-				<h4 class="text-uppercase text-grey-dark">
-					Nieuwsbrief
+				<h4 class="text-black mb-3">
+					Links
 				</h4>
-				<p>Praesent eleifend metus hendrerit semper tristique.</p>
+				
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" title="">HappyAppy</a></li>
+                    <li><a href="#" title="">Demo aanvragen</a></li>
+                    <li><a href="#" title="">Support</a></li>
+                    <li><a href="#" title="">Nieuws</a></li>
+                </ul>
 				<!--@todo: replace with mailchimp code-->
-				<form>
-					<div class="input-group">
-						<label class="sr-only" for="email-field">Email</label>
-						<input class="form-control" id="email-field" placeholder="Email" type="text">
-						<span class="input-group-btn">
-							<button class="btn btn-primary" type="button">Go!</button>
-						</span>
-					</div>
-				</form>
+				
 			</div>
-		</div>
 
+            <div class="col-md-4">
+                <h4 class="text-black mb-3">
+                    Over ons
+                </h4>
+                <p>Praesent eleifend metus hendrerit semper tristique. Donec nulla ipsum, scelerisque eget rhoncus sit amet.</p>
+            </div>
+		</div>
+        
 	</div>
 	<hr class="my-0 hr-blank op-2">
 	<!--@todo: replace with company copyright details-->
-	<div class="bg-grey text-sm py-3">
+	<div class="text-sm py-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -324,7 +288,7 @@
 				</div>
 				
 			</div>
-			<a href="#top" class="btn btn-icon btn-inverse pos-fixed pos-b pos-r mr-3 mb-3 hidden-md-down scroll-state-active" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+			<a href="#top" class="btn btn-back-to-top btn-icon btn-inverse pos-fixed pos-b pos-r mr-3 mb-3 hidden-md-down scroll-state-active" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
 		</div>
 	</div>
 </footer>
