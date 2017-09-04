@@ -1,6 +1,14 @@
 mrequire 'capistrano/ext/multistage'
 require 'pathname'
 
+require 'capistrano/server_definition'
+require 'capistrano/role'
+class Capistrano::Configuration
+  def role_names_for_host(host)
+    roles.map {|role_name, role| role_name if role.include?(host) }.compact || []
+  end
+end
+
 # Stages ('testing' because test is reserved word)
 set :stages, %w(ute uat prod dev)
 
