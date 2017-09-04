@@ -21,7 +21,7 @@ set :application, 'ps'
 set :scm, :git
 #set(:branch) { "#{stage_branch}" }
 
-set :repository, 'git@github.com:mpouwels/PS-App.git'
+set :repository, 'git@github.com:roanhahn/Performance-support.git'
 
 set :deploy_via, :remote_cache
 set :keep_releases, 10
