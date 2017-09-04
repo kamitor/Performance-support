@@ -1,0 +1,3 @@
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+Dir[File.dirname(__FILE__) + '/config/ps/*.rb'].each{|file| load file }
+load 'config/deploy.rb'
