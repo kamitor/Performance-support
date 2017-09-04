@@ -18,9 +18,9 @@ namespace :ps do
                 }
             end
         end
-        # CVE: Deze taak word als een - na - laatst aangeroepen..
+ 
         task :create_directories, :roles => [:web, :app], :except => { :no_release => true } do
-            run "if [ ! -d #{latest_release}/www.ps-app.eu/Plugins ] && [ ! -e #{latest_release}/www.ps-app.eu/Plugins ]; then mkdir -p #{latest_release}/www.ps-app.eu/Plugins; fi"
+            run "if [ ! -d #{latest_release}/www.performancesupport.eu/Plugins ] && [ ! -e #{latest_release}/www.performancesupport/Plugins ]; then mkdir -p #{latest_release}/www.performacesupport.eu/Plugins; fi"
         end
 
         task :install_composer, :roles => [:web, :app], :except => { :no_release => true } do
