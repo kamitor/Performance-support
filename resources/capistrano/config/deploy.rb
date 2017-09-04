@@ -1,4 +1,4 @@
-mrequire 'capistrano/ext/multistage'
+require 'capistrano/ext/multistage'
 require 'pathname'
 
 require 'capistrano/server_definition'
