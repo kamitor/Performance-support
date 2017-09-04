@@ -1,4 +1,4 @@
-require 'capistrano/ext/multistage'
+mrequire 'capistrano/ext/multistage'
 require 'pathname'
 
 # Stages ('testing' because test is reserved word)
@@ -13,7 +13,7 @@ set :application_env, 'ute'
 #set :parameters_dir, "app/config"
 
 # Symlinks
-set :app_symlinks, ["/www.ps-app.eu/public_html/media","/dashboard.ps-app.eu/public_html/media","/dashboard.ps-app.eu/public_html/pma"]
+set :app_symlinks, ["/www.performancesupport.eu/public_html/media","/dashboard.performancesupport.eu/public_html/media","/dashboard.performancesupport.eu/public_html/pma"]
 
 # application, domain
 set :application, 'ps'
