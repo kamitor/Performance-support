@@ -1,5 +1,5 @@
 #env settings
-set :application_env, 'prod'
+set :application_env, 'master'
 set :deploy_to, '/resources2/fileshare'
 #set :stage_branch,  'prod'
 set :use_sudo, false
