@@ -1,0 +1,41 @@
+namespace :ps do
+    namespace :release do
+        # CVE: Deze onderstaande functie word als laatst aangeroepen.
+        task :update_symlink, :roles => [:web, :app], :except => { :no_release => true } do
+            if app_symlinks
+                # Backup the contents of the shared directories if they were deployed from SCM
+                app_symlinks.each { |link| run "#{try_sudo} if [ -d #{release_path}#{link} ] || [ -e #{release_path}#{link} ]; then mv #{latest_release}#{link} #{latest_release}#{link}.orig; fi" }
+                # Add symlinks the directoris in the shared location
+                app_symlinks.each { |link| pathname_latest_release_link = Pathname.new(File.dirname(latest_release+link))
+                    pathname_shared_path_link = Pathname.new(shared_path+link)
+                    relative_shared_path = pathname_shared_path_link.relative_path_from(pathname_latest_release_link)
+
+                    # Create shared path
+                    run "if [ ! -d #{shared_path}#{link} ] && [ ! -e #{shared_path}#{link} ]; then mkdir -p #{shared_path}#{link}; fi"
+
+                    # Symlink
+                    run "ln -vnfs #{relative_shared_path} #{latest_release}#{link}"
+                }
+            end
+        end
+        # CVE: Deze taak word als een - na - laatst aangeroepen..
+        task :create_directories, :roles => [:web, :app], :except => { :no_release => true } do
+            run "if [ ! -d #{latest_release}/www.ps-app.eu/Plugins ] && [ ! -e #{latest_release}/www.ps-app.eu/Plugins ]; then mkdir -p #{latest_release}/www.ps-app.eu/Plugins; fi"
+        end
+
+        task :install_composer, :roles => [:web, :app], :except => { :no_release => true } do
+            run "cd #{latest_release}/ && curl -sS https://getcomposer.org/installer | php"
+        end
+
+        task :composer_install, :roles => [:web, :app], :except => { :no_release => true } do
+            run "cd #{latest_release}/ && php composer.phar install --no-dev --prefer-dist"
+        end
+
+        task :update do
+            install_composer
+            composer_install
+            create_directories
+            update_symlink
+        end
+    end
+end
