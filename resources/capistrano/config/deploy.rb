@@ -7,22 +7,22 @@ set :stages, %w(ute uat prod dev)
 
 # liefst wil ik van testing -> ute hebben. Let wel op dat dit goed gaat.
 
-set :default_stage, 'ute'
-set :application_env, 'ute'
+set :default_stage, 'prod'
+set :application_env, 'prod'
 
 # parameters
 #set :parameters_dir, "app/config"
 
 # Symlinks
-set :app_symlinks, ["/www.ps-app.eu/public_html/media","/dashboard.ps-app.eu/public_html/media","/dashboard.ps-app.eu/public_html/pma"]
+set :app_symlinks, ["/www.performancesupport.eu/public_html/media","/dashboard.performancesupport/public_html/media","/performancesupport/public_html/pma"]
 
 # application, domain
-set :application, 'ps'
+set :application, 'performancesupport'
 # Source control tool
 set :scm, :git
 #set(:branch) { "#{stage_branch}" }
 
-set :repository, 'git@github.com:mpouwels/PS-App.git'
+set :repository, 'git@github.com:roanhahn/Performance-support.git'
 
 set :deploy_via, :remote_cache
 set :keep_releases, 10
