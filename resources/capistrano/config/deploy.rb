@@ -7,8 +7,8 @@ set :stages, %w(ute uat prod dev)
 
 # liefst wil ik van testing -> ute hebben. Let wel op dat dit goed gaat.
 
-set :default_stage, 'prod'
-set :application_env, 'prod'
+set :default_stage, 'master'
+set :application_env, 'master'
 
 # parameters
 #set :parameters_dir, "app/config"
