@@ -3,7 +3,7 @@
     "name": "performanceSupport",
     "license": "MIT",
     "type": "project",
-    "description": "PerformanceSupport"
+    "description": "PerformanceSupport",
     "autoload": {
         "psr-0": {
             "": "src/"
