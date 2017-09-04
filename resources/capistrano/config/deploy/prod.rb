@@ -1,6 +1,6 @@
 #env settings
 set :application_env, 'prod'
-set :deploy_to, '/resources/fileshare'
+set :deploy_to, '/resources2/fileshare'
 #set :stage_branch,  'prod'
 set :use_sudo, true
 
