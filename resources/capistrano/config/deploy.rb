@@ -43,4 +43,4 @@ default_run_options[:pty] = true
 ssh_options[:paranoid] = false
 
 
-after 'deploy:update_code' , 'ps:release:update'
+after 'ps:release:update'
