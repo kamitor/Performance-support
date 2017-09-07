@@ -1,6 +1,6 @@
 require 'capistrano/ext/multistage'
 require 'pathname'
-
+require 'capistrano_recipes'
 
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
