@@ -41,5 +41,3 @@ default_run_options[:pty] = true
 
 # Controls how Net::SSH responds to a server key that it does not recognize
 ssh_options[:paranoid] = false
-
-after 'ps:release:update'
